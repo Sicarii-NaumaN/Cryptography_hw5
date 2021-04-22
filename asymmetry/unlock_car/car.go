@@ -14,6 +14,7 @@ func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
+// letterRunes variable uses to generate random challenge
 var letterRunes = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
 func NewCar(openCode string, keyPair *rsa.PrivateKey, trinketKey *rsa.PublicKey) *Car {
